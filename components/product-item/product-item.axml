@@ -1,0 +1,17 @@
+<view class="product-container">
+  <view class="product-image-container">
+    <image class='product-image' mode="aspectFit" src="{{productData.image}}"/>
+  </view>
+  <view>
+    <view class="product-name">{{productData.name}}</view>
+    <view class="product-description">{{productData.description}}</view>
+    <view a:if="{{editable}}" class="product-price">
+      <view class="price">$ {{productData.price}} x </view>
+      <mystepper onChange="onCountUpdate" step="{{1}}" showNumber 
+      readOnly="{{false}}" value="{{productData.count}}" min="{{0}}" max="{{9999}}" />
+    </view>
+    <view a:else class="product-price">
+      <text>$ {{productData.price}} x {{productData.count}}</text>
+    </view>
+  </view>
+</view>

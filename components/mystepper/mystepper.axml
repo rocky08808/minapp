@@ -1,0 +1,5 @@
+<view class="form-row">
+  <view class="stepper-button-view" onTap="minus"> - </view>
+  <input class="count" value="{{value}}" disabled="{{false}}" />
+  <view class="stepper-button-view" onTap="plus"> + </view>
+</view>

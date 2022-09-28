@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "stepper": "mini-antui/es/stepper/index",
+    "mystepper": "../mystepper/mystepper"
+  }
+}
