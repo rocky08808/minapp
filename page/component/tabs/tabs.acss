@@ -1,0 +1,18 @@
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.tabbar-title{
+  background-color: brown;
+  height: 30px
+  
+}
+
+.tabbar-active{
+  background-color: #FFFF00;
+  
+  
+}

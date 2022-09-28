@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="page-description">Gyroscope change API</view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.onGyroscopeChange</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="onGyroscopeChange">start listen gyroscope change</button>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.offGyroscopeChange</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="offGyroscopeChange">stop listen gyroscope change</button>
+    </view>
+  </view>
+</view>

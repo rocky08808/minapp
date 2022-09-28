@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-title">my.httpRequest</view>
+    <view class="page-section-btns">
+      <view onTap="requestHttp">Initiate a request</view>
+      <view onTap="requestHttp_404">Initiate a request(https 404)</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.request</view>
+    <view class="page-section-btns">
+      <view onTap="request">Initiate a request</view>
+      <view onTap="request_404">Initiate a request(https 404)</view>
+    </view>
+  </view>
+</view>
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-title">my.httpRequest</view>
+    <view class="page-section-btns">
+      <view onTap="requestHttp_http">Initiate a request(http)</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.request</view>
+    <view class="page-section-btns">
+      <view onTap="request_http">Initiate a request(http)</view>
+    </view>
+  </view>
+</view>

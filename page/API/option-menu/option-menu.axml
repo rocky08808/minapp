@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-description">Set optionMenu button</view>
+  <button onTap="optionMenu">setOptionMenu https</button>
+  <button onTap="optionMenu_http">setOptionMenu http</button>
+  <button onTap="optionMenu_base64">setOptionMenu base64有前缀</button>
+  <button onTap="optionMenu_base64_no_prefix">setOptionMenu base64无前缀</button>
+  <button onTap="optionMenu_base64_3030">setOptionMenu 30*30</button>
+  
+</view>

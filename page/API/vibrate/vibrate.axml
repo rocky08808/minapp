@@ -1,0 +1,15 @@
+<view class="page">
+
+  <button type="primary" onTap="vibrate">
+    Start vibrating
+  </button>
+
+  <button type="primary" onTap="vibrateLong">
+    Long time vibration (400ms)
+   </button>
+
+  <button type="primary" onTap="vibrateShort">
+    Short time vibration (40ms)
+  </button>
+
+</view>

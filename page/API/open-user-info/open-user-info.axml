@@ -1,0 +1,13 @@
+<view class="container">
+  <text class="title">{{title}}</text>
+  <button type="ghost" open-type="getAuthorize" class="btn-integration"
+    onGetAuthorize="onGetAuthorize" onError="onAuthError" 
+    scope='userInfo'>
+    Get Open User Info
+  </button>
+  <textarea class="result" placeholder="API call result" value="{{result}}" disabled="{{true}}" maxlength="{{-1}}" auto-height="{{true}}">
+  </textarea>
+  <text class="desc">
+    {{desc}}  
+  </text>
+</view>

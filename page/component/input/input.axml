@@ -1,0 +1,131 @@
+<view class="page">
+  <view class="page-description">Input box</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label" >Controlled focus</view>
+      <view class="form-row-label" disabled="true">Controlled focus</view>
+      <view class="form-row-content">
+        <input class="input" focus="{{focus}}" onFocus="onFocus" onBlur="onBlur" placeholder="input something" />
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="extra-info">{{eventTrigger}}</view>
+    </view>
+    <view class="page-section-btns">
+      <button size="mini" onTap="bindButtonTap">Focus</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label"><label for="controlled">According to the input</label></view>
+      <view class="form-row-content">
+        <input class="input" id="controlled" onInput="bindKeyInput" placeholder="show input content" />
+      </view>
+    </view>
+    <view class="extra-info">What you type is：{{inputValue}}</view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">The maximum length</view>
+      <view class="form-row-content">
+        <input class="input" maxlength="10" placeholder="maxlength 10" name="inputName" />
+      </view>
+    </view>
+
+
+    <view class="form-row">
+      <view class="form-row-label">cursor</view>
+      <view class="form-row-content">
+        <input class="input" cursor="5" maxlength="10" placeholder="maxlength 10" name="inputName" />
+      </view>
+    </view>
+
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">Collapse the keyboard</view>
+      <view class="form-row-content">
+        <input class="input" onInput="bindHideKeyboard" placeholder="Enter 123 to automatically close the keyboard" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">enter password</view>
+      <view class="form-row-content">
+        <input class="input" password type="text" placeholder="Password input box" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">type in data</view>
+      <view class="form-row-content">
+        <input class="input" type="number" placeholder="Digital input box" />
+      </view>
+    </view>
+
+    <view class="form-row">
+      <view class="form-row-label">Enter the number 2</view>
+      <view class="form-row-content">
+        <input class="input" type="number" placeholder="Digital input box" placeholder-style="color:#e2e2e2;" />
+      </view>
+    </view>
+
+    <view class="form-row">
+      <view class="form-row-label">Enter the number 3</view>
+      <view class="form-row-content">
+        <input class="input" type="number" placeholder="Digital input box" placeholder-class="placeholderStyle" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">Decimal keyboard</view>
+      <view class="form-row-content">
+        <input class="input" type="digit" placeholder="Numeric keypad with decimal point" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">ID card</view>
+      <view class="form-row-content">
+        <input class="input" type="idcard" placeholder="ID card input keyboard" />
+      </view>
+    </view>
+  </view>
+
+
+  <view class="page-section">
+    <view class="page-section-title">search bar</view>
+    <view class="page-section-demo">
+      <view class="search-outer">
+        <input
+          class="search-input"
+          placeholder="search"
+          value="{{search}}"
+          onConfirm="doneSearch"
+          onInput="handleSearch"
+        />
+        <text class="search-cancel" onTap="clearSearch">cancel</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">test</view>
+    <view class="page-section-demo">
+      <input class="search-input" value="Search search is dormitory is" selection-start="4" selection-end="4"/>
+    </view>
+  </view>
+
+    <view class="page-section">
+    <view class="page-section-title">test</view>
+    <view class="page-section-demo">
+      <input class="input" type="idcard" placeholder="ID card input keyboard" randomNumber/>
+    </view>
+  </view>
+
+    <view class="page-section">
+    <view class="page-section-title">test1111</view>
+    <view class="page-section-demo">
+      <input class="input" type="text" placeholder="ID card input keyboard" confirm-type="go" confirm-hold/>
+    </view>
+  </view>
+</view>

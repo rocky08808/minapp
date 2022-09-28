@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="page-section">
+    <button type="primary" onTap="navigateTo">Jump to new page</button>
+    <button type="primary" onTap="navigateBack">return to previous page</button>
+    <button type="primary" onTap="redirectTo">Open on current page - Get user information</button>
+    <button type="primary" onTap="redirectTo_mainPage">Open on current page - homepage</button>
+    <button type="primary" onTap="redirectTo_currentPage">Open on current page - current page</button>
+    <button type="primary" onTap="switchTab">Jump Tab - component</button>
+  </view>
+</view>

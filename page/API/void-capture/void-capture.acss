@@ -1,0 +1,29 @@
+.btn-group {
+  box-sizing: border-box;
+}
+
+.btn-group .btn {
+  height: 96rpx;
+  margin-bottom: 40rpx;
+  border-radius: 96rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 96rpx;
+  background: #1890ff;
+  color: #fff;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-right {
+  flex: 1;
+  padding: 16rpx 32rpx;
+  text-align: right;
+}
+
+.btn-tm {
+  padding: 5rpx 32rpx;
+}

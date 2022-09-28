@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="btn-area">
+    <navigator class="navigator" url="../ocr-idcard-face/ocr-idcard-face">ID card identification</navigator>
+    <navigator class="navigator" url="../ocr-vehicle/ocr-vehicle">Driving license identification</navigator>
+    <navigator class="navigator" url="../ocr-driver-license/ocr-driver-license">Driver's license identification</navigator>
+    <navigator class="navigator" url="../ocr-business-license/ocr-business-license">Business license identification</navigator>
+    <navigator class="navigator" url="../ocr-bank-card/ocr-bank-card">Bank card identification</navigator>
+    <navigator class="navigator" url="../ocr-general/ocr-general">Universal text recognition</navigator>
+    <navigator class="navigator" url="../ocr-train-ticket/ocr-train-ticket">Train ticket identification</navigator>
+    <navigator class="navigator" url="../ocr-passport/ocr-passport">Passport identification</navigator>
+    <navigator class="navigator" url="../ocr-vehicle-plate/ocr-vehicle-plate">License Plate Recognition</navigator>
+    <navigator class="navigator" url="../ocr-business-card/ocr-business-card">Business card recognition</navigator>
+    <navigator class="navigator" url="../ocr-vin/ocr-vin">vin Identification</navigator>
+  </view>
+</view>

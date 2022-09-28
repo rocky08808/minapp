@@ -1,0 +1,99 @@
+<view class="page">
+  <view class="page-description">WIFI API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.startWifi</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="startWifi">start wifi</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.stopWifi</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="stopWifi">stop wifi</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.connectWifi</view>
+    <view class="form-row">
+      <view class="form-row-label">wifi-ssid</view>
+      <view class="form-row-content">
+        <input id="connect_ssid" onInput="onInput" class="input" value="{{connect_ssid}}" />
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">wifi-bssid</view>
+      <view class="form-row-content">
+        <input id="connect_bssid" onInput="onInput" class="input" value="{{connect_bssid}}" />
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">wifi-password</view>
+      <view class="form-row-content">
+        <input id="connect_password" onInput="onInput" class="input" value="{{connect_password}}" />
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">wifi-isWEP</view>
+      <view class="switch-item">
+        <switch onChange="switch1Change"/>
+      </view>
+      </view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="connectWifi">connect wifi</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.getWifiList</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="getWifiList">get wifi list</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.onGetWifiList</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="onGetWifiList">listen get wifi list event</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.setWifiList</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="setWifiList">set wifi list</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.onWifiConnected</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="onWifiConnected">listen wifi connected event</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.getConnectedWifi</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="getConnectedWifi">get connected wifi</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.registerSSID</view>
+    <view class="form-row">
+      <view class="form-row-label">ssid</view>
+      <view class="form-row-content">
+        <input id="register_ssid" onInput="onInput" class="input" value="{{register_ssid}}" />
+      </view>
+    </view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="registerSSID">register ssid</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.unregisterSSID</view>
+    <view class="form-row">
+      <view class="form-row-label">ssid</view>
+      <view class="form-row-content">
+        <input id="unregister_ssid" onInput="onInput" class="input" value="{{unregister_ssid}}" />
+      </view>
+    </view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="unregisterSSID">unregister ssid</button>
+    </view>
+  </view>
+</view>

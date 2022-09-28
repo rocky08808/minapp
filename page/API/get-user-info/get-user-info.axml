@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <block a:if="{{hasUserInfo === false}}">
+        <text>Click [get] to get the user's avatar and nickname</text>
+      </block>
+      <block a:if="{{hasUserInfo === true}}">
+        <view class="userinfo-avatar">
+          <image class="userinfo-avatar-img" src="{{userInfo.avatar}}"></image>
+        </view>
+        <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      </block>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="getUserInfo">Obtain</view>
+      <view onTap="clear">Empty</view>
+    </view>
+  </view>
+</view>

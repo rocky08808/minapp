@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="page-section">
+    Set TabBar content
+    <view class="page-section-demo">
+      <!-- English copy -->
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="setTabBarBadge">setTabBarBadge</button>       
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="removeTabBarBadge">removeTabBarBadge</button>  
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="showTabBarRedDot">showTabBarRedDot</button>  
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="hideTabBarRedDot">hideTabBarRedDot</button> 
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="setTabBarStyle">setTabBarStyle</button>  
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="setTabBarItem">setTabBarItem</button>  
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="showTabBar">showTabBar</button>  
+      <button a:if="{{locale === 'en_us'}}" type="default" onTap="hideTabBar">hideTabBar</button>
+      <!-- 中文文案 -->
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="setTabBarBadge">setTabBarBadge</button>       
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="removeTabBarBadge">Delete TabBarBadge</button>  
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="showTabBarRedDot">showTabBarRedDot</button>  
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="hideTabBarRedDot">hideTabBarRedDot</button> 
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="setTabBarStyle">Set TabBarStyle</button>  
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="setTabBarItem">Set TabBarItem</button>  
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="showTabBar">showTabBar </button>  
+      <button a:if="{{locale === 'zh_cn'}}" type="default" onTap="hideTabBar">Hide TabBar</button>
+    </view>
+  </view>
+</view>
+

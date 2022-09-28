@@ -1,0 +1,25 @@
+<view>
+  <view class="banner" style="height:60rpx">
+    <view class="fake-searchbar" onTap="onSearchBarTap">
+      <icon type="search" size="14" color="#1D1D1D" />
+      <text a:if="{{locale === 'zh_cn'}}" class="fake-placeholder">Search for the components and APIs you want</text>
+      <text a:if="{{locale === 'en_us'}}" class="fake-placeholder">search the API you want</text>
+    </view>
+  </view>
+  <view class="list" style="padding-top: 80rpx">
+    <block a:for="{{APIList}}" a:for-item="list">
+      <list className="list-item">
+        <view a:if="{{locale === 'zh_cn'}}" slot="header" class="list-header">{{list.type}}</view>
+        <view a:if="{{locale === 'en_us'}}" slot="header" class="list-header">{{list.typeEn}}</view>
+        <block a:for="{{list.list}}">
+          <list-item arrow="{{true}}" multipleLine="{{false}}" key="items-{{item.name}}" last="{{index === list.list.length - 1}}">
+            <navigator url="{{item.path}}" style="display: flex; align-items: center">
+              <text a:if="{{locale === 'zh_cn'}}" class="component-name">{{item.name}}</text>
+              <text a:if="{{locale === 'en_us'}}" class="component-name">{{item.nameEn}}</text>
+            </navigator>
+          </list-item>
+        </block>
+      </list>
+    </block>
+  </view>
+</view>

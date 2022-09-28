@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page-description">Nodes in the query API</view>
+  <view class="page-section">
+    <view className="all">node all1</view>
+    <view className="all">node all2</view>
+    <view id="one">node one</view>
+    <view id="scroll" style="height:200px;overflow: auto">
+      <view style="height:400px">Independent rolling region</view>
+    </view>
+    <button type="primary" onTap="createSelectorQuery">Nodes in the query</button>
+  </view>
+</view>

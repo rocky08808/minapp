@@ -1,0 +1,53 @@
+<view class="page">
+  <view class="search-bar">
+    <search-bar
+      focus="{{true}}"
+      value="{{value}}"
+      placeholder="Search for the components and APIs you want"
+      onInput="onInput"
+      onCancel="onCancel"
+      onClear="onClear"
+      onSubmit="onSubmit"
+      showCancelButton="{{false}}" />
+  </view>
+  <view class="search-container" a:if="{{componentSuggestions.length === 0 && apiSuggestions.length === 0}}">
+    <view a:if="{{value.length === 0}}">
+      <view a:if="{{ history.length > 0 }}" style="border-bottom: 1rpx solid #F5F5F5; margin-bottom: 16px;">
+        <view class="history">history<view class="clear" onTap="clear"></view></view>
+        <block-list listData="{{history}}" class="history-list" onItemTap="onItemTap" />
+      </view>
+      <view>
+        <view class="hot">Popular</view>
+        <block-list listData="{{hot}}" class="history-list" />
+      </view>
+    </view>
+    <view class="no-search-result" a:else>
+      <image src="/image/icon/no_search_result.png" />
+      <text>No search results found</text>
+    </view>
+  </view>
+  <view class="search-results" a:else>
+    <view a:if="{{componentSuggestions.length > 0}}" class="component">
+      <list>
+        <view slot="header" class="list-header">Component</view>
+        <block a:for="{{componentSuggestions}}">
+          <list-item
+            arrow="{{true}}"
+            multipleLine="{{false}}"
+            key="items-{{item.name}}"
+            last="{{index === componentSuggestions.length - 1}}">
+            <view
+              onTap="onListItemTap"
+              data-url="{{item.path}}"
+              data-name="{{item.name}}"
+              style="display: flex; align-items: center">
+              <image src="{{item.thumb}}" class="thumb" />
+              <text class="component-name">{{item.name}}</text>
+            </view>
+          </list-item>
+        </block>
+      </list>
+    </view>
+    
+  </view>
+</view>

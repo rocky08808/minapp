@@ -1,0 +1,24 @@
+<view>
+  <tabs
+    activeCls="tabbar-active"
+    tabs="{{tabs}}"
+    showPlus="{{true}}"
+    onTabClick="handleTabClick"
+    onChange="handleTabChange"
+    onPlusClick="handlePlusClick"
+    activeTab="{{activeTab}}"
+    swipeable="{{true}}"
+    duration="1000"
+    tabBarBackgroundColor="#999999"
+    tabBarActiveTextColor="#800080"
+    tabBarInactiveTextColor="#FFFF00"
+    tabBarUnderlineColor="#FF1493"
+    tabBarCls="tabbar-title"
+>
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}">
+        <view class="tab-content">content of {{item.title}}</view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>

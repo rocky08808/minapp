@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="page-description">Page scrolling API</view>
+
+  <view class="page-section">
+    <view class="page-section-title">
+      my.pageScrollTo
+    </view>
+    <view class="page-section-demo">
+      <input type="text" placeholder="key" name="key" value="{{scrollTop}}" onInput="scrollTopChange"></input>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="scrollTo">Page scrolling</view>
+    </view>
+  </view>
+
+  <view style="height:1000px"/>
+</view>

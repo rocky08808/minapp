@@ -1,0 +1,14 @@
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" circular="{{true}}"/>
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list1}}" circular="{{false}}" />
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" hasLine="{{true}}" />
+
+
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" circular columnNum="{{4}}" list="{{list3}}" />
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list1}}" />
+<view style="margin-top: 10px;" />
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" hasLine="{{false}}" />

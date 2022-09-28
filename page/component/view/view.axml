@@ -1,0 +1,187 @@
+<view class="page" disable-scroll="{{false}}">
+  <view>
+    <button a:if="{{returnIndex}}" onTap="returnIndex">back to the homepage</button>
+  </view>
+  <view class="page-description">View</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view class="stream">
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              welcome to use
+            </view>
+            <view class="postBody__date">
+              May 20
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser" onTap="onTap1">
+            <view class="postUser__name" hover-stop-propagation="{{true}}">Jack</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content" onDisappear="onDisappear1">
+              @Chris How can I start？
+            </view>
+            <view class="postBody__date">
+              May 21
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              Please down our IDE to develop。
+            </view>
+            <view class="postBody__date">
+              May 22
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red">
+            <view class="postBody__content" hover-stop-propagation="{{true}}">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden>
+              June 1
+            </view>
+          </view>
+        </view>
+
+         <view class="post">
+          <view class="postUser">
+            <view class="postUser__name" onTouchStart="onTouchStart1" onTouchEnd="onTouchEnd1">Attribute</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" onTouchCancel="onTouchCancel1" onLongTap="onLongTap1" onAppear="onAppear1" onTouchMove="onTouchMove1">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden>
+              June 1
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name" onTap="onTap1">onTap</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden="{{false}}" style="height:250px">
+              June 2
+              disable-scroll=ture
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden="{{false}}">
+              June 3。
+            </view>
+          </view>
+        </view> 
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden="{{false}}">
+              June 3
+            </view>
+          </view>
+        </view> 
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden="{{false}}">
+              June 3
+            </view>
+          </view>
+        </view> 
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content">
+              Good job!
+            </view>
+            <view class="postBody__date" hidden="{{false}}">
+              June 3
+            </view>
+          </view>
+        </view> 
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red" hover-start-time="2000" hover-stay-time="5000">
+            <view class="postBody__content" onFirstAppear="onFirstAppear1">
+              test
+            </view>
+            <view class="postBody__date" hidden="{{false}}">
+              June 3
+            </view>
+          </view>
+        </view> 
+
+        <view class="post" hidden>
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              Good job! +1
+            </view>
+            <view class="postBody__date">
+              June 1
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+
+<view class="page">
+  <view class="page-section">
+    <view class="layout-row">
+      <view class="page-section-title">Product Detail</view> 
+      <view class="button-right" onTap="onChangeEnv">Env: {{envList[env]}}</view>
+    </view>
+    <view class="btn-tm" onTap="onChangeStartParams">Terminal type: {{terminalType || '--'}}</view> 
+    <view a:for="{{products}}" a:for-item="product">
+      <product-item productData="{{product}}" onCountChange="onProductCountChange" />
+    </view>
+  </view>
+  <view class="btn-group">
+    <button size="default" type="primary" onTap="onPlaceOrder" disabled="{{loading}}">Place Order (${{totalPrice}})</button>
+    <block a:if="{{ tradePaySuccess }}">
+      <button size="default" type="primary" disabled="{{captureLoading}}" onTap="handleCapture">Capture</button>
+      <button size="default" type="primary" disabled="{{voidLoading}}" onTap="handleVoid">Void</button>
+    </block>
+  </view>
+</view>

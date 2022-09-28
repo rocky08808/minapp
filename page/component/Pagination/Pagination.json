@@ -1,0 +1,6 @@
+   {
+      "defaultTitle": "Mini Program AntUI component library",
+      "usingComponents": {
+        "pagination": "mini-antui/es/pagination/index"
+      }
+    }

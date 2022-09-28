@@ -1,0 +1,35 @@
+<view class="video-page">
+<view class="video-contain">
+  <video 
+      src="{{src}}" 
+      class="video" 
+      id="video"
+      poster="https://zos.alipayobjects.com/rmsportal/SSWkSLDrrgsLFDfsjzTZ.png"
+      autoplay="{{autoplay}}"
+      object-fit="{{objectFit}}"
+      loop="{{loop}}"
+      show-fullscreen-btn="{{showFullscreenBtn}}"
+      show-center-play-btn="{{showCenterPlayBtn}}"
+      onPlay="onPlay"
+      onPause="onPause"
+      onEnded="onEnded"
+      onTimeUpdate="onTimeUpdate"
+      onLoading="onLoading"
+      onStop="onStop"
+      enableNative="{{true}}"
+      muted="{{muted}}"
+      >
+    </video>
+    </view>
+    <view class="operation-item" style="background-color:lightblue">{{title}}</view>
+    <view class="operation-item" onTap="play">Play</view>
+    <view class="operation-item" onTap="pause">suspended</view>
+    <view class="operation-item" onTap="seek">Skip to 15s play</view>
+    <view class="operation-item" onTap="mute">Mute</view>
+    <view class="operation-item" onTap="playbackRate">Double speed playback</view>
+    <view class="operation-item" onTap="requestFullScreen">full screen</view>
+    <view class="operation-item" onTap="exitFullScreen">Exit Full Screen</view>
+    <view class="operation-item" onTap="showStatusBar">Display status bar</view>
+    <view class="operation-item" onTap="hideStatusBar">Hide status bar</view>
+    <view class="operation-item" onTap="stop">Stop play</view>
+</view>

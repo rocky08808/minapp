@@ -1,0 +1,82 @@
+
+<view>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal21" style="margin: 0 10px;">Pop-up window</button>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal22" style="margin: 0 10px;">Pictured pop-up window - small picture</button>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal2" style="margin: 0 10px;">Popover with image - large image</button>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal" style="margin: 0 10px;">Gm modal</button>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal3" style="margin: 0 10px;">Operational popup-Big</button>
+	<view style="margin-top: 10px;" />
+	<button onTap="openModal4" style="margin: 0 10px;">Operate activity pop-ups-small</button>
+	<modal
+		show="{{modalOpened21}}"
+		onModalClick="onModalClick21"
+		onModalClose="onModalClose21"
+		topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+	>
+		<view slot="header">The title line</view>
+		Explain the current status, prompt the user solution, preferably no more than two lines。
+		<view slot="footer">confirm</view>
+	</modal>
+	<modal
+		show="{{modalOpened2}}"
+		onModalClick="onModalClick2"
+		onModalClose="onModalClose2"
+		topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+		topImageSize="lg"
+		closeType="1"
+	>
+		<view slot="header">The title line</view>
+		Explain the current status, prompt the user solution, preferably no more than two lines。
+		<view slot="footer">confirm</view>
+	</modal>
+	<modal
+		show="{{modalOpened22}}"
+		onModalClick="onModalClick22"
+		onModalClose="onModalClose22"
+		topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+		topImageSize="sm"
+	>
+		<view slot="header">The title line</view>
+		Explain the current status, prompt the user solution, preferably no more than two lines。
+		<view slot="footer">confirm</view>
+	</modal>
+	<modal
+		show="{{modalOpened}}"
+		onModalClick="onModalClick"
+		onModalClose="onModalClose"
+	>
+		<view style="margin: 20px 0 10px 0;">Let the employee use scan and add it as a shop assistant</view>
+		<image mode="widthFix" style="width: 100%;" src="https://tfsimg.alipay.com/images/mobilecodec/TB1JjWmXkyEDuNjme6tXXXIKXXa" />
+		Qr codes are automatically updated every minute
+		<view slot="footer">confirm</view>
+	</modal>
+	<modal
+		show="{{modalOpened3}}"
+		onModalClose="onModalClick3"
+		advice="{{true}}"
+		>
+		<view style="display: flex; height: 465px; width: 319px;">
+			<image
+				style="height: 465px;width: 319px;"
+				src="https://gw.alipayobjects.com/zos/rmsportal/vJzAWQLgeDLGOMKiIgZt.png"
+			/>
+		</view>
+	</modal>
+	<modal
+		show="{{modalOpened4}}"
+		onModalClose="onModalClick4"
+		advice="{{true}}"
+		>
+		<view style="display: flex; width: 270px; height: 350px;">
+			<image
+				style="width: 270px;height: 350px;"
+				src="https://gw.alipayobjects.com/zos/rmsportal/vJzAWQLgeDLGOMKiIgZt.png"
+			/>
+		</view>
+	</modal>
+</view>

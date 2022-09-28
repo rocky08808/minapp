@@ -1,0 +1,17 @@
+<view>
+  <amount-input
+    type="digit"
+    title="Transfer amount"
+    extra="It is recommended to transfer more than ¥100"
+    placeholder="Enter the transfer amount"
+    value="{{value}}"
+    maxLength="10"
+    focus="{{true}}"
+    btnText="Full withdrawal"
+    onClear="onInputClear"
+    onInput="onInput"
+    onButtonClick="onButtonClick"
+    onConfirm="onInputConfirm"
+    onBlur="onInputBlur"
+    onFocus="onInputFocus" />
+</view>

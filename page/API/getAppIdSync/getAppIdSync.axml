@@ -1,0 +1,8 @@
+<view class="page">
+  <view class="page-section">
+    <view>Click the button to trigger jsapi</view>
+    <button type="primary" onTap="getAppIdSync" class="btn-integration">
+      GetAppIdSync
+    </button>
+  </view>
+</view>

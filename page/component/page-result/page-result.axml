@@ -1,0 +1,12 @@
+<view>
+  <page-result
+    type="network"
+    title="Network does not force"
+    brief="The farthest distance from the incident is this"
+  >
+    <view class="am-page-result-btns">
+      <view onTap="backHome">back to the homepage</view>
+      <view>Sample button</view>
+    </view>
+  </page-result>
+</view>

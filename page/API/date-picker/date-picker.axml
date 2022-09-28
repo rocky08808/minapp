@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="page-description">Select date API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.datePicker</view>
+    <view class="page-section-demo">
+      <button class="page-body-button" type="primary" onTap="datePicker">Select a date-1</button>
+      <button class="page-body-button" type="primary" onTap="datePickerHMS">Select a date-2</button>
+      <button class="page-body-button" type="primary" onTap="datePickerYMDHMS">Select date-3</button>
+    </view>
+  </view>
+</view>

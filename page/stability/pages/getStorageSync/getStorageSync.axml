@@ -1,0 +1,15 @@
+<view>
+  <view class="page-description">Get cached data synchronously</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <button type="primary" onTap="setStorage">Save the data</button>
+      <button type="primary" onTap="getStorageSync">Synchronize data acquisition</button>
+      <button type="primary" onTap="getStorageSync_many">The interface is called repeatedly 30 times.</button>
+      <button type="primary" onTap="getStorageSync_null">The parameter is null</button>
+      <button type="primary" onTap="getStorageSync_number">The parameter is a number</button>
+      <button type="primary" onTap="getStorageSync_array">The argument is an array</button>   
+      <button type="primary" onTap="getStorageSync_symbol">Parameter is a symbol</button> 
+      <button type="primary" onTap="getStorageSync_bool">The argument is a boolean</button>                                     
+    </view>
+  </view>
+</view>

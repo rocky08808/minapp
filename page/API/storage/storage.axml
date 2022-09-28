@@ -1,0 +1,29 @@
+<view class="page">
+  <view class="page-description">data storage API</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <input type="text" placeholder="key" name="key" value="{{key}}" onInput="keyChange"></input>
+      <input type="text" placeholder="data" name="data" value="{{data}}" onInput="dataChange"></input>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="setStorage">Storing data</view>
+      <view onTap="getStorage">Read data</view>
+      <view onTap="removeStorage">delete data</view>
+      <view onTap="clearStorage">clear data</view>
+      <view onTap="getStorageInfo"> getStorageInfo</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <input type="text" placeholder="key" name="keySync" value="{{keySync}}" onInput="keyChangeSync"></input>
+      <input type="text" placeholder="data" name="dataSync" value="{{dataSync}}" onInput="dataChangeSync"></input>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="setStorageSync">Synchronous storage of data</view>
+      <view onTap="getStorageSync">Read data synchronously</view>
+      <view onTap="removeStorageSync">Synchronous deletion of data</view>
+      <view onTap="clearStorageSync">Synchronize data</view>
+      <view onTap="getStorageInfoSync">Synchronize data information</view>
+    </view>
+  </view>
+</view>

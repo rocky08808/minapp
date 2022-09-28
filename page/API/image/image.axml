@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-btns">
+      <view onTap="chooseImage">chooseImage</view>
+      <view onTap="previewImage">previewImage</view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="chooseImage_camera">chooseImage(camera)</view>
+      <view onTap="chooseImage_album">chooseImage(album)</view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="previewImage_apfilePath">previewImage(apfilePath)</view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="saveImage">saveImage(showActionSheet true)</view>
+      <view onTap="saveImage_showActionSheet_false">saveImage(showActionSheet false)</view>
+    </view>
+  </view>
+</view>

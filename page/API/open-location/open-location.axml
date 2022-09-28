@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>longitude</text>
+      <input type="text" disabled="{{true}}" value="{{longitude}}" name="longitude"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>latitude</text>
+      <input type="text" disabled="{{true}}"  value="{{latitude}}" name="latitude"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Location name</text>
+      <input type="text" disabled="{{true}}"  value="{{name}}" name="name"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Detailed location</text>
+      <input type="text" disabled="{{true}}"  value="{{address}}" name="address"></input>
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" formType="submit" onTap="openLocation">Check the position of</view>
+    </view>
+  </view>
+</view>

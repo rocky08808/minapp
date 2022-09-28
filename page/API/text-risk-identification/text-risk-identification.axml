@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page-description">Text risk identification API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.textRiskIdentification</view>
+    <view class="page-section-demo">
+      <textarea placeholder="Enter text content" onInput="handleInput" name="textarea"/>
+      <button type="primary" onTap="textRiskIdentification">Start identifying</button>
+    </view>
+  </view>
+</view>
+
+

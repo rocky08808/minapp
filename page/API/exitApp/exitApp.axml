@@ -1,0 +1,8 @@
+<view class="page">
+  <view class="page-section">
+    <view>Click the button to trigger jsapi</view>
+    <button type="primary" onTap="exitApp" class="btn-integration">
+      Exit App
+    </button>
+  </view>
+</view>

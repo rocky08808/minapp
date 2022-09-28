@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page-description">Card package API</view>
+  <view class="page-section">
+    <view class="page-section-title">Card/coupon/ticket details page</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="openCardList">Open card list</button>
+      <button type="primary" onTap="openVoucherList">Open coupon list</button>
+      <button type="primary" onTap="openTicketList">Open ticket list</button>
+    </view>
+
+    <view class="page-section-title">Card/coupon/ticket details page</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openCardDetail">Open card details page</button>
+       <button type="primary" onTap="openVoucherDetail">Open coupon details page</button>
+       <button type="primary" onTap="openTicketDetail">Open ticket details page</button>
+       <button type="primary" onTap="openKBVoucherDetail"> Open coupon details</button>
+       <button type="primary" onTap="gotoDetail"> Enter the word of mouth card coupon details</button>
+    </view>
+
+    <view class="page-section-title">Card/coupon/ticket list</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openMerchantCardList">Open card merchant list page</button>
+       <button type="primary" onTap="openMerchantVoucherList">Open the brokerage listing page</button>
+       <button type="primary" onTap="openMerchantTicketList">Open ticket merchant list page</button>
+    </view>
+  </view>
+</view>

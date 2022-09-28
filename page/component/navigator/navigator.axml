@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="page-description">Navigation Bar</view>
+  <navigator url="navigate?title=navigate">
+    <button type="default">Jump to new page</button>
+  </navigator>
+  <view onTap="navigate" data-url="redirect?title=redirect" data-open-type="redirectTo" hover-class="other-navigator-hover">
+    <button type="default">Open on current page</button>
+  </view>
+  <view onTap="navigate" data-url="/page/component/index" data-open-type="redirectTo" hover-class="other-navigator-hover">
+    <button type="default">Open on current page(component tab)</button>
+  </view>
+
+  <view onTap="navigate" data-url="/page/API/index/index" data-open-type="switchTab" hover-class="other-navigator-hover">
+    <button type="default">Jump to another tab - "Components"</button>
+  </view>
+  <view a:if="{{canReLaunch}}" onTap="navigate" data-url="reLaunch" data-open-type="reLaunch" hover-class="other-navigator-hover">
+    <button type="default">reLaunch</button>
+  </view>
+  <view onTap="navigate" data-open-type="navigateBack">
+    <button type="default">navigateBack</button>
+  </view>
+</view>

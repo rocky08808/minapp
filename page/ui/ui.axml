@@ -1,0 +1,17 @@
+<import src="/util/lifecycle.axml" />
+<import src="/util/grid/index.axml" />
+
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>The API interface and components of the page display and parameterless return classes cannot be automatically implemented through one-click interface, and are all implemented by UI automation.
+        Currently, the small program demo is directly selected as the test object of the UI automation, and the interface on the demo is used to automate such interfaces.</text>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <template is="grid" data="{{...arr}}" />
+</view>
+
+<template is="lifecycle" a:if="{{debug}}"/>

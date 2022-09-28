@@ -1,0 +1,21 @@
+<view class="page">
+  <text class="title" >{{title}}</text>
+  <view>Please input message title:</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-content">
+        <input class="input" id="inputTitle" onInput="onTitleInput" placeholder="Notification title" maxlength="-1"/>
+      </view>
+    </view>
+  <view>Please input message content:</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-content">
+        <input class="input" id="inputContent" onInput="onContentInput" placeholder="Notification content" maxlength="-1"/>
+      </view>
+    </view>
+      <button type="ghost" class="btn-integration" onTap="onPush">
+      push notification
+      </button>
+  </view>
+</view>

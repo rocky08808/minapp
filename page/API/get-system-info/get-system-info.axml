@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>Phone model</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.model}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Language</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.language}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>version</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.version}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Window width</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.windowWidth}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Height of the window</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.windowHeight}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>DPI</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.pixelRatio}}"></input>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="getSystemInfo">Get phone system information</view>
+      <view onTap="getSystemInfoSync">Synchronize access to mobile phone system information</view>
+    </view>
+  </view>
+</view>

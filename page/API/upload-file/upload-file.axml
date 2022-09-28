@@ -1,0 +1,7 @@
+<view class="page">
+  <button type="primary" onTap="uploadFile">upload image(http)</button>
+</view>
+<view class="page">
+  <button type="primary" onTap="uploadFile_https">upload image(https)</button>
+  <button type="primary" onTap="uploadFile_formData">upload image formData(https)</button>
+</view>

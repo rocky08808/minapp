@@ -1,0 +1,28 @@
+<view class="demo-title">NoticeBar</view>
+<view class="demo-item">
+    <notice enableMarquee marqueeProps="{{loop: false, leading: 500,   trailing: 800, fps: 40 }}">Due to the upgrade of the national citizenship system, add bank card bank card bank card bank card</notice>
+</view>
+<view class="demo-item">
+    <notice mode="link" onClick="linkClick">Adding a bank card due to the national citizenship system upgrade</notice>
+</view>
+<view class="demo-item">
+    <notice mode="closable" onClick="closableClick" show="{{closeShow}}">Due to the upgrade of the national citizenship system, add bank card bank card bank card bank card</notice>
+</view>
+<view class="demo-item">
+    <notice mode="link" action="Go and see" onClick="linkActionClick">Due to the national citizenship system upgrade, add bank card bank card bank card</notice>
+</view>
+<view class="demo-item">
+    <notice mode="closable" action="No longer prompt" onClick="closableActionClick" show="{{closeActionShow}}">Due to the national citizenship system upgrade, add bank card bank card bank card</notice>
+</view>
+<view class="demo-item">
+    <notice mode="closable" onClick="closableClick" show="{{closeShow}}">Test off</notice>
+</view>
+<view class="demo-item">
+    <notice mode="link" action="Go and see" onClick="linkActionClick">Test to see</notice>
+</view>
+<view class="demo-item">
+    <notice mode="closable" action="Do not remind again" onClick="closableActionClick" show="{{closeActionShow}}" actionCls="action-text">Test close prompt</notice>
+</view>
+<view class="demo-item">
+    <notice mode="link" onClick="closableClick" show="{{closeShow}}" enableMarquee marqueeProps="{{loop: false, leading: 500,   trailing: 800, fps: 40 }}">Test arrow</notice>
+</view>

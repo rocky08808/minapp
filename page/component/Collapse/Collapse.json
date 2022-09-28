@@ -1,0 +1,7 @@
+   {
+      "defaultTitle": "Mini Program AntUI component library",
+      "usingComponents": {
+        "collapse": "mini-antui/es/collapse/index",
+        "collapse-item": "mini-antui/es/collapse/collapse-item/index"
+      }
+    }

@@ -1,0 +1,26 @@
+<view>
+  <tips-dialog
+    show="{{showDialog}}"
+    className="dialog"
+    type="dialog"
+  >
+    <view class="content" slot="content">
+      <view>hello,</view>
+      <view>Welcome to the small program extension component library mini-antui</view>
+    </view>
+    <view slot="operation" class="opt-button" onTap="onDialogTap">Got it</view> 
+  </tips-dialog>
+  <tips-dialog
+    iconUrl="https://gw.alipayobjects.com/zos/rmsportal/AzRAgQXlnNbEwQRvEwiu.png"
+    type="rectangle"
+    className="rectangle"
+    onCloseTap="onCloseTap"
+    show="{{showRectangle}}">
+    <view class="content" slot="content">
+      Add "city service" to the homepage
+    </view>
+    <view slot="operation" class="add-home" onTap="onRectangleTap">Add it now</view>
+  </tips-dialog>
+
+  <tips-plain onClose="onClose" time="{{time}}">{{content}}</tips-plain>
+</view>

@@ -1,0 +1,17 @@
+<view>
+  <button type="primary" onTap="generateRandomNumber">Generate Random Number</button>
+  <button type="primary" onTap="generateUUID">Generate UUID</button>
+  <view>{{number}}</view>
+</view>
+
+<view>
+  <view class="message">{{ctrMessage}}</view>
+  <button type="primary" onTap="aesctrEncrypt">AEC CTR Encrypt</button>
+  <button type="primary" onTap="aesctrDecrypt">AEC CTR Decrypt</button>
+</view>
+
+<view>
+  <view class="message">{{cbcMessage}}</view>
+  <button type="primary" onTap="aescbcEncrypt">AEC CBC Encrypt</button>
+  <button type="primary" onTap="aescbcDecrypt">AEC CBC Decrypte</button>
+</view>

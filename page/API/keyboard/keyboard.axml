@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-description">Input box</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">password keyboard</view>
+      <view class="form-row-content">
+        <input class="input" password type="text" onInput="bindHideKeyboard" placeholder="Enter 123 to automatically close the keyboard" />
+      </view>
+    </view>
+
+    <view class="form-row">
+      <view class="form-row-label">Numeric keypad</view>
+      <view class="form-row-content">
+        <input class="input" type="digit" onInput="bindHideKeyboard" placeholder="Enter 123 to automatically close the keyboard" />
+      </view>
+    </view>
+  </view>
+</view>

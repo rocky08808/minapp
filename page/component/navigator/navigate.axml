@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="page-description" style="text-align: center; margin-top: 200px;">
+    I am a new page
+  </view>
+</view>
+<view class="btn-area">
+  <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">Jump to new page</navigator>
+  <navigator url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">Open in current page</navigator>
+  <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">Switch Tab</navigator>
+    <navigator url="/page/index/index" hover-start-time="1" hover-stay-time="2">hover Tab</navigator>
+</view>

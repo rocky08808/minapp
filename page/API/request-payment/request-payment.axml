@@ -1,0 +1,55 @@
+<view class="page">
+  <view class="page-description">There is no payment function, only the use of the API is displayed. For the specific access payment, please refer to the payment part of the API's official documentation API.</view>
+  <view class="page-section">
+    <view class="page-section-title">my.tradePay</view>
+    <view class="form-row">
+      <view class="form-row-label">
+        <label for="inputTradeNo">tradeNo</label></view>
+      <view class="form-row-content">
+        <input class="input" id="inputTradeNo" onInput="onTradeNoUpdate" placeholder="show input content" maxlength="-1"/>
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">
+        <label for="inputOrderStr">orderStr</label></view>
+      <view class="form-row-content">
+        <input class="input" id="inputOrderStr" onInput="onOrderStrUpdate" placeholder="show input content" maxlength="-1"/>
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">
+        <label for="inputPaymentUrl">paymentUrl</label></view>
+      <view class="form-row-content">
+        <input class="input" id="inputPaymentUrl" value="{{paymentUrl}}" onInput="onPaymentUrlUpdate" placeholder="show input content" maxlength="-1"/>
+      </view>
+    </view>
+    <view class="form-row">
+      <view class="form-row-label">
+        <label for="hostUrl">Server Url</label></view>
+      <view class="form-row-content">
+        <input class="input" id="hostUrl" onInput="bindHostUrl" placeholder="default: localhost:3000" maxlength="-1"/>
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="tradePay">Initiate a payment request</view>
+    </view>
+    <view>
+      <text class="error-msg">{{errorMsg}}</text>
+    </view>
+    <button type="primary" onTap="trandeNoTradePay" class="btn-zhaochengkai200">
+      Payment with TradeNo
+    </button>
+    <button type="primary" onTap="orderStrTradePay" class="btn-zhaochengkai200">
+      Payment with OrderStr
+    </button>
+    <button type="primary" onTap="paymentUrlTradePay" class="btn-zhaochengkai200">
+      Payment with PaymentUrl
+    </button>
+    <!-- <button type="primary" onTap="mockTradePay" class="btn-zhaochengkai200">
+      Payment with MP Server
+    </button> -->
+    <button type="primary" onTap="payWithOpenAPI" class="btn-zhaochengkai200">
+      Payment with OpenAPI
+    </button>
+  </view>
+</view>

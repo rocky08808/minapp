@@ -1,0 +1,6 @@
+{
+    "usingComponents":{
+        "stepper": "mini-antui/es/stepper/index",
+        "product-item": "/components/product-item/product-item"
+      }
+}

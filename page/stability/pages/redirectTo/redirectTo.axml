@@ -1,0 +1,47 @@
+<view class="page">
+  <text>点击‘全部执行’，能对有返回参数的接口实现一键自动化。\n
+    有返回参数的接口，组合参数后再调用对应接口，通过判断对对应接口的返回参数的校验，实现接口自动化。
+      </text>
+</view>
+<!-- <button catchTap="handleTap">start testing</button> -->
+<view class="tb-wrap">
+  <view class="tb-item">
+    <view class="flag pass"></view>
+    <view>pass</view>
+  </view>
+  <view class="tb-item">
+    <view class="flag fail"></view>
+    <view>fail</view>
+  </view>
+  <view class="tb-item">
+    <view class="flag untest"></view>
+    <view>untest</view>
+  </view>
+  <view class="tb-item">
+    <view class="flag run"></view>
+    <view>running</view>
+  </view>
+</view>
+<view id="{{idx}}" class="list-wrap {{item.result}}" a:for="{{tests}}" a:for-index="idx" onTap="onItemTap">
+  <view class="r1">
+    <view class="t1">
+      <label class="tc-name">{{idx+1}}. {{item.name}}</label>
+    </view>
+    <view class="t2">
+      <view id="{{idx}}" class="tc-btn" catchTap="onRunTap">carried out</view>
+    </view>
+  </view>
+  <view class="t3 {{item.status}}">
+    <view class="tc-desc">Use case description：</view>
+    <view>
+      <label class="tc-txt">{{item.desc}}</label>
+    </view>
+    <view>
+      <text>{{"\n"}}</text>
+    </view>
+    <view class="tc-result">Test Results：</view>
+    <view>
+      <label class="tc-txt">{{item.info}}</label>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="page-description">
+    <view class="text-demo-title">
+      <text class="text-demo-text">This is a piece of text\n<text>\</text><text>n</text> Can wrap</text>
+    </view>  
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>{{text}}</text>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text space="nbsp" selectable="{{false}}" decode="{{true}}">Alipay is a platform for large-scale life services，&lt;The user base is very wide, up to the age of 50 or 60,</text>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text space="ensp" selectable="{{true}}" decode="{{true}}">Alipay is a platform for large-scale life services.&emsp;The user base is very wide, up to the age of 50 or 60,</text>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text space="emsp" selectable="{{true}}" number-of-lines=1>Alipay is a platform for large-scale life services, with a very broad user base, up to the age of 50 or 60.</text>
+    </view>
+  </view>
+</view>

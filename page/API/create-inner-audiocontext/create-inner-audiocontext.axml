@@ -1,0 +1,36 @@
+<view class="video-page">
+
+    <view class="video-contain">
+        <audio id="myAudio" />
+    </view>
+    <view class="video-contain">
+        <audio id="audio2" />
+    </view>
+    <view class="operation-item" style="background-color:lightblue">{{title}}</view>
+    <view class="operation-item" onTap="play">Play</view>
+    <view class="operation-item" onTap="pause">suspended</view>
+    <view class="operation-item" onTap="seek">seek{{seek}}s play</view>
+    <view class="operation-item" onTap="stop">Stop play</view>
+    <view class="operation-item" onTap="destroy">destroy</view>
+    <view class="operation-item" onTap="getAllProps">Display attribute</view>
+
+    <picker onChange="offCallback"  value="{{callbackIndex}}" range="{{callbackArr}}" >
+        <view class="row">
+          <view class="row-title">offCallback</view>
+          <view class="row-extra">Current selection：{{callback}}</view>
+        </view>
+    </picker>
+
+    
+    <view class="operation-item" onTap="play2">Play audio2</view>
+    <view class="operation-item" onTap="pause2">Suspend audio2</view>
+    <view class="operation-item" onTap="getAllProps2">Display attribute 2</view>
+
+    <picker onChange="offCallback2"  value="{{callback2Index}}" range="{{callback2Arr}}" >
+        <view class="row">
+          <view class="row-title">offCallback</view>
+          <view class="row-extra">Current selection:{{callback2}}</view>
+        </view>
+    </picker>
+
+</view>

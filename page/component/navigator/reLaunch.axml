@@ -1,0 +1,3 @@
+<view class="page">
+  <button onTap="index">Click back to the home page</button>
+</view>

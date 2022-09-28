@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>longitude:</text>
+      <input value="{{longitude}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>latitude:</text>
+      <input value="{{latitude}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Location name:</text>
+      <input value="{{name}}"></input>
+    </view>
+    <view class="page-section-demo">
+      <text>Detailed location:</text>
+      <input value="{{address}}"></input>
+    </view>    
+    <view class="page-section-btns">
+      <view onTap="chooseLocation">Select location</view>
+    </view>
+  </view>
+</view>

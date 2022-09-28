@@ -1,0 +1,6 @@
+<view>
+  <button size="default" type="primary" onTap="applyUpdate">applyUpdate</button>
+  <button size="default" type="primary" onTap="onCheckForUpdate">onCheckForUpdate</button>
+  <button size="default" type="primary" onTap="onUpdateReady">onUpdateReady</button>
+  <button size="default" type="primary" onTap="onUpdateFailed">onUpdateFailed</button>
+</view>

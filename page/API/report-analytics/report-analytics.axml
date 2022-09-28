@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page-description">reportAnalytics API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.reportAnalytics</view>
+    <view class="page-section-demo">
+      <view class="report" onTap="reportAnalytics">click</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.reportAnalytics</view>
+    <view class="page-section-demo">
+      <view class="report" onTap="reportAnalyticsExposure">exposure</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.reportAnalytics</view>
+    <view class="page-section-demo">
+      <view class="report" onTap="reportAnalyticsCustom">custom</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">my.reportAnalytics</view>
+    <view class="page-section-demo">
+      <view class="report" onTap="runtimeException">runtime exception</view>
+    </view>
+  </view>
+</view>

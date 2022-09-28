@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view>Current position latitude and longitude</view>
+      <block a:if="{{hasLocation === false}}">
+        <text>Not acquired</text>
+      </block>
+      <block a:if="{{hasLocation === true}}">
+        <view class="page-body-text-location">
+          <text>E{{location.longitude[0]}}°{{location.longitude[1]}}′</text>
+          <text>N{{location.latitude[0]}}°{{location.latitude[1]}}′</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="page-section-btns">
+      <view onTap="getLocation">getLocation</view>
+      <view onTap="clear">Empty</view>
+    </view>
+  </view>
+</view>

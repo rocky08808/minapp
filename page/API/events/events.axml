@@ -1,0 +1,5 @@
+<view class="page">
+  <view>
+    Click on the title to test the container event
+  </view>
+</view>

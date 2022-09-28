@@ -1,0 +1,11 @@
+<view class="page">
+
+  <button type="primary" onTap="onMemoryWarning">
+    Start to monitor low memory
+  </button>
+
+  <button type="primary" onTap="offMemoryWarning">
+    Stop to monitor low memory
+  </button>
+
+</view>

@@ -1,0 +1,55 @@
+<view>
+  <view style="margin-top: 10px;" />
+  <list>
+    <input-item
+      data-field="cardNo"
+      clear="{{true}}"
+      value="{{cardNo}}"
+      className="dadada"
+      placeholder="Bank card number"
+      focus="{{inputFocus}}"
+      onInput="onItemInput"
+      onFocus="onItemFocus"
+      onBlur="onItemBlur"
+      onConfirm="onItemConfirm"
+      onClear="onClear"
+    >
+      card number
+      <view slot="extra" class="extra" onTap="onExtraTap"></view>
+    </input-item>
+    <picker-item
+      data-field="bank"
+      placeholder="Choose issuing bank"
+      value="{{bank}}"
+      onPickerTap="onPickerTap"
+    >
+      Issuing bank
+    </picker-item>
+    <input-item
+      data-field="name"
+      placeholder="name"
+      type="text"
+      value="{{name}}"
+      clear="{{true}}"
+      onInput="onItemInput"
+      onClear="onClear"
+    >
+      name
+    </input-item>
+    <input-item
+      data-field="password"
+      placeholder="password"
+      password
+    >
+      password
+    </input-item>
+    <input-item
+      data-field="remark"
+      placeholder="Remarks"
+      last="{{true}}"
+    />
+  </list>
+  <view style="margin: 10px;">
+    <button type="primary" onTap="onAutoFocus">Focus</button>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-section">
+    <view>Click the button and call caniuse to determine if the image can be saved.</view>
+    <button type="primary" onTap="canIUse" class="btn-integration">
+      Can you save the picture
+    </button>
+    <button type="primary" onTap="canIUse_property" class="btn-integration">
+      canIUse(getStorage.object.key)
+    </button>
+    <view>notFoundJSAPIInterceptor</view>
+    <button type="primary" onTap="aaa" class="btn-integration">
+      aaa(Android)
+    </button>
+    <button type="primary" onTap="jsapiTest" class="btn-integration">
+      jsapiTest(iOS)
+    </button>
+  </view>
+</view>

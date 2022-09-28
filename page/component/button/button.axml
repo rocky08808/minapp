@@ -1,0 +1,70 @@
+<view class="page">
+  <view class="page-description">button</view>
+  <view class="page-section">
+    <view class="page-section-title">type-primary/ghost</view>
+    <view class="page-section-demo">
+      <button type="primary">The main operating Normal</button>
+      <button type="primary" hover-stop-propagation="true" >Main operation Normal</button>
+      <button type="primary" hover-stop-propagation="false" >Main operation Normal</button>
+      <button type="primary" plain="true">Main operation Normal</button>
+      <button type="primary" loading>operating</button>
+      <button type="primary" disabled>Main operation Disable</button>
+      <button type="ghost">ghost operating1</button> 
+     <button type="ghost" loading>ghost Operation 2</button>
+      <button type="ghost"hover-start-time = "5">Ghost operation 1</button>
+      <button type="ghost" loading hover-stay-time="5">Ghost operation 2</button>
+      <button type="ghost" disabled>Ghost operation Disable</button>
+    </view>
+    <view class ="red">
+      <button type="primary" plain="true">Main operation Normal</button>
+      <button type="primary" hover-stop-propagation="true" >test  propagation true</button>
+    </view>
+    <view class ="red">
+      <button type="primary" plain="true">Main operation Normal</button>
+      <button type="primary" hover-stop-propagation="false" >test  propagation false</button>
+    </view>
+
+    <view class="page-section-demo" hover-class="btn-area-aaa" onTouchStart="sss">
+       <button type="primary" onTap="onTaponTap" hover-stop-propagation="{{true}}">Main operation Normal</button>
+       <button type="primary">The main operating Normal</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">type-default</view>
+    <view class="page-section-demo">
+      <button data-aspm-click="xxx">Auxiliary operation Normal</button>
+      <button disabled>Auxiliary operation Disable</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">type-warn</view>
+    <view class="page-section-demo">
+      <button type="warn">Warning class operation Normal</button>
+      <button type="warn" disabled>Warning class operation Disable</button>
+      <button type="warn" hover-class="red">hover-red</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">Size</view>
+    <view class="page-section-demo">
+      <button size="mini" loading>submit</button>
+      <button style="margin-left: 10px;" type="primary" size="mini" onTap="tapButton">Option</button>
+    </view>
+  </view>
+  <!-- <view class="page-section">
+    <view class="page-section-title">open</view>
+    <view class="page-section-demo">
+      <button open-type="share">share</button>
+    </view>
+  </view> -->
+  <view class="page-section">
+    <view class="page-section-title">Form</view>
+    <view class="page-section-demo">
+      <form onSubmit="onSubmit" onReset="onReset">
+        <button form-type="submit" type="primary" class="btn-integration">submit</button>
+        <button form-type="reset" class="btn-integration">reset</button>
+      </form>
+    </view>
+  </view>
+</view>
+

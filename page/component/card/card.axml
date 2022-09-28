@@ -1,0 +1,25 @@
+<view class="container">
+  <card
+    title="Card title 1"
+    subTitle="Subtitle is not required 1"
+    onClick="onCardClick"
+    info="Clicked on the first card"
+  />
+  <view style="margin-top: 10px;" />
+  <card
+    thumb="{{thumb}}"
+    title="Card title 2"
+    subTitle="Subtitle is not required 2"
+    onClick="onCardClick"
+    info="Clicked on the second card"
+  />
+  <view style="margin-top: 10px;" />
+  <card
+    thumb="{{thumb}}"
+    title="Card title 3"
+    subTitle="Subtitle is not required 3"
+    onClick="onCardClick"
+    footer="Descriptive text"
+    footerImg="{{footerImg}}"
+    info="Clicked on the third card"
+  /></view>

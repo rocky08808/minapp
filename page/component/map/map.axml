@@ -1,0 +1,64 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <map
+        id="map"
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
+        scale="{{scale}}"
+        controls="{{controls}}"
+        onControlTap="controltap"
+        markers="{{markers}}"
+        onMarkerTap="markertap"
+        polyline="{{polyline}}"
+        polygon="{{polygon}}"
+        circles="{{circles}}"
+        onRegionChange="regionchange"
+        onTap="tap"
+        onCalloutTap="callouttap"
+        show-location style="width: 100%; height: 200px;"
+        include-points="{{includePoints}}"
+        ground-overlays="{{ground-overlays}}">
+      </map>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoResetMap">restore</view>
+    <view onTap="demoGetCenterLocation">Get center point coordinates</view>
+    <view onTap="demoMoveToLocation">Back to the anchor point</view>
+  </view>
+
+  <view class="page-section-btns">
+    <view onTap="demoMarkerAnimation">Marker animation</view>
+    <view onTap="demoMarkerLabel">Label</view>
+    <view onTap="demoMarkerAppendStr">Text Marker</view>
+  </view>
+
+  <view class="page-section-btns">
+    <view onTap="demoMarkerAnimation1">Marker Animation in figure</view>
+    <view onTap="demoMarkerLabel1">Label change text</view>
+    <view onTap="demoPolygon1">triangle</view>  
+  </view>
+
+  <view class="page-section-btns">
+    <view onTap="demoMarkerCustomCallout0">CustomCallout0</view>
+    <view onTap="demoMarkerCustomCallout1">CustomCallout1</view>
+    <view onTap="demoMarkerCustomCallout">CustomCallout</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoMarkerAppendStr1">Text Marker for text</view>
+    <view onTap="demoTrafficOverlay">Traffic display</view>
+    <view onTap="demoShowRoute">Walking route planning</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoCompass">compass</view>
+    <view onTap="demoGesture">gestures</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoPolyline">line</view>
+    <view onTap="demoPolygon">Polygon</view>
+    <view onTap="demoCircle">Round Circle</view>
+  </view>
+  <view class="page-section-btns">
+  </view>
+</view>

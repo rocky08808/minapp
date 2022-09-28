@@ -1,0 +1,67 @@
+
+
+<view>
+  <view class="banner">
+    <view a:if="{{locale === 'zh_cn'}}" class="title" style="opacity: {{titleOpacity}}">miniapp test demo</view>
+    <view a:if="{{locale === 'en_us'}}" class="title" style="opacity: {{titleOpacity}}">Test Demo</view>
+    <!-- <view class="sub-title"style="opacity: {{titleOpacity}}">{{i18n[locale].list.description}}</view> -->
+    <view class="fake-searchbar" onTap="onSearchBarTap">
+      <icon type="search" size="14" color="#1D1D1D" />
+      <text a:if="{{locale === 'zh_cn'}}" class="fake-placeholder">Search for the components and APIs you want</text>
+      <text a:if="{{locale === 'en_us'}}" class="fake-placeholder">search the API you want</text>
+    </view>
+  </view>
+  <block-list listData="{{hot}}" className="hot" />
+  <view class="tabs {{shadow ? 'shadow' : ''}}" style="top: {{top}}px">
+    <view class="tabs-bar">
+      <block a:if="{{locale === 'zh_cn'}}" a:for="{{tabs}}">
+        <view class="tabs-bar-tab" data-index="{{index}}" onTap="onTabBarTap">
+          <view class="tabs-bar-tab-title {{activeTab === index ? 'active' : ''}}">{{item}}</view>
+        </view>
+      </block>
+      <block a:if="{{locale === 'en_us'}}" a:for="{{tabs_en}}">
+        <view class="tabs-bar-tab" data-index="{{index}}" onTap="onTabBarTap">
+          <view class="tabs-bar-tab-title {{activeTab === index ? 'active' : ''}}">{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="list-wrap">
+    <view class="list-container" style="{{ transform: 'translate3d(' +(-activeTab * 100) + 'vw, 0, 0)' }}">
+      <view class="list" style="{{ height: activeTab === 0 ? 'auto' : 0 }}">
+        <block a:for="{{basicComponentList}}" a:for-item="list">
+          <list className="list-item">
+            <view a:if="{{locale === 'zh_cn'}}" slot="header" class="list-header">{{list.type}}</view>
+            <view a:if="{{locale === 'en_us'}}" slot="header" class="list-header">{{list.typeEn}}</view>
+            <block a:for="{{list.list}}">
+              <list-item arrow="{{true}}" multipleLine="{{false}}" key="items-{{item.name}}" last="{{true}}">
+                <navigator url="{{item.path}}" style="display: flex; align-items: center">
+                  <image src="{{item.thumb}}" class="thumb"  mode="aspectFit" />
+                    <text a:if="{{locale === 'zh_cn'}}" class="component-name">{{item.name}}</text>
+                    <text a:if="{{locale === 'en_us'}}" class="component-name">{{item.nameEn}}</text>
+                </navigator>
+              </list-item>
+            </block>
+          </list>
+        </block>
+      </view>
+      <view class="list" style="{{ height: activeTab === 1 ? 'auto' : 0 }}">
+        <block a:for="{{extComponentList}}" a:for-item="list">
+          <list className="list-item">
+            <view a:if="{{locale === 'zh_cn'}}" slot="header" class="list-header">{{list.type}}</view>
+            <view a:if="{{locale === 'en_us'}}" slot="header" class="list-header">{{list.typeen}}</view>
+            <block a:for="{{list.list}}">
+              <list-item arrow="{{true}}" multipleLine="{{false}}" key="items-{{item.name}}" last="{{true}}">
+                <navigator url="{{item.path}}" style="display: flex; align-items: center">
+                  <image src="{{item.thumb}}" class="thumb" mode="aspectFit" />
+                  <text a:if="{{locale === 'zh_cn'}}" class="component-name">{{item.name}}</text>
+                  <text a:if="{{locale === 'en_us'}}" class="component-brief">{{item.nameEn}}</text>
+                </navigator>
+              </list-item>
+            </block>
+          </list>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

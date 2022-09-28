@@ -1,0 +1,4 @@
+<view class="container">
+  <button onTap="download">Download image and display</button>
+  <button onTap="download_file">Download file(amr)</button>
+</view>

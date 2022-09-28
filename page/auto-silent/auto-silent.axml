@@ -1,0 +1,56 @@
+<view class="page">
+  <!-- <view class="page-section"> -->
+    <!-- <view class="page-section-demo"> -->
+    <!-- </view> -->
+  <!-- </view> -->
+</view>
+<!-- <button catchTap="showList">初始化列表</button> -->
+<view class="page-section-demo">
+      <button catchTap="handleTap">Start all test</button>
+</view>
+
+<view class="tb-sb"> 
+    <view>
+        <view>Total:{{total}}     Pass:{{passed}}    Fail:{{failed}}  Untest:{{total - passed - failed}}</view>
+    </view> 
+</view> 
+<view class="tb-wrap">
+    <view class="tb-item">
+        <view class="flag pass"></view>
+        <view>pass</view>
+    </view>
+    <view class="tb-item">
+        <view class="flag fail"></view>
+        <view>fail</view>
+    </view>
+    <view class="tb-item">
+        <view class="flag untest"></view>
+        <view>untest</view>
+    </view>
+    <view class="tb-item">
+        <view class="flag run"></view>
+        <view>running</view>
+    </view>
+</view>
+
+<view id="{{idx}}" class="list-wrap {{item.result}}" a:for="{{tests}}" a:for-index="idx" onTap="onItemTap">
+
+    <view class="r1">
+        <view class="t1">
+        <label class="tc-name">{{idx+1}}. {{item.name}}</label> 
+        </view>
+
+        <view class="t2">
+            <view id="{{idx}}" class="tc-btn" catchTap="onRunTap">Run</view> 
+        </view>
+    </view>
+
+    <view class="t3 {{item.status}}">
+        <view class="tc-desc">Case description:</view>
+        <view><label class="tc-txt">{{item.desc}}</label></view>
+        <view><text>{{"\n"}}</text></view>
+        <view class="tc-result">Test result:</view>
+        <view><label class="tc-txt">{{item.info}}</label></view>     
+    </view>
+
+</view>

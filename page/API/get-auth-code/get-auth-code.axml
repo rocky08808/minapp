@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page-section">
+    <view>Please don't enter the small program to authorize the box. It is recommended to understand the service content of the applet first.</view>
+    <button type="primary" onTap="getAuthCode1" class="btn-zhaochengkai200">
+      Get AuthCode (auth_base)
+    </button>
+    <button type="primary" onTap="getAuthCode2" class="btn-zhaochengkai200">
+      Get AuthCode (auth_user)
+    </button>
+    <button type="primary" onTap="getAuthCode3" class="btn-zhaochengkai200">
+      Get AuthCode (multiple)
+    </button>
+    <button type="primary" onTap="getAuthCode4" class="btn-zhaochengkai200">
+      Get AuthCode & Access Token
+    </button>
+    <view class="form-row">
+      <view class="form-row-label">
+        <label for="inputScopes">Scopes</label></view>
+      <view class="form-row-content">
+        <input class="input" id="inputScopes" onInput="onScopeInput" placeholder="Custom scopes" maxlength="-1"/>
+      </view>
+    </view>
+    <text>Scopes separated by ',' without space.</text>
+    <button type="primary" onTap="getAuthCode5" class="btn-zhaochengkai200">
+      Get AuthCode (Custom)
+    </button>
+  </view>
+</view>

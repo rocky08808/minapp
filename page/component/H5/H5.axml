@@ -1,0 +1,4 @@
+<!-- axml -->
+<!-- Webview pointing to Taobao homepage-->
+<!-- <web-view src="https://staging.go-games.gg/tournament?app=gcash&country=PH&userid=some_user_id" onMessage="test"></web-view> -->
+<web-view src="https://main.m.taobao.com/" onMessage="test"></web-view>

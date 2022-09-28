@@ -1,0 +1,279 @@
+<view class="page">
+
+  <view class="page-description">Contact API</view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.choosePhoneContact</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="choosePhoneContact">Arouse local address book</button>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.chooseAlipayContact</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="chooseAlipayContact">Arouse Alipay Address Book</button>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.chooseContact</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="chooseContact">Select contact</button>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.addPhoneContact</view>
+    <view class="page-section-demo">
+
+      <view style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text style="font-size:18px;margin-top:18px;margin-bottom:18px">Basic Information</text>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">nickname</view>
+        <view class="form-row-content">
+          <input id="nickName" onInput="onInput" class="input" value="July fire" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Last name</view>
+        <view class="form-row-content">
+          <input id="lastName" onInput="onInput" class="input" value="Last" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">middle name</view>
+        <view class="form-row-content">
+          <input id="middleName" onInput="onInput" class="input" value="Middle" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">name</view>
+        <view class="form-row-content">
+          <input id="firstName" onInput="onInput" class="input" value="First" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Remarks</view>
+        <view class="form-row-content">
+          <input id="remark" onInput="onInput" class="input" value="Here is the note" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">phone number</view>
+        <view class="form-row-content">
+          <input id="mobilePhoneNumber" onInput="onInput" class="input" value="13800000000" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Account</view>
+        <view class="form-row-content">
+          <input id="alipAccount" onInput="onInput" class="input" value="alipay@alipay.com" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Wechat number</view>
+        <view class="form-row-content">
+          <input id="weChatNumber" onInput="onInput" class="input" value="liuhuo" />
+        </view>
+      </view>
+
+      <view style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text style="font-size:18px;margin-top:18px;margin-bottom:18px">contact address</text>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">country</view>
+        <view class="form-row-content">
+          <input id="addressCountry" onInput="onInput" class="input" value="US" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">province</view>
+        <view class="form-row-content">
+          <input id="addressState" onInput="onInput" class="input" value="California" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">city</view>
+        <view class="form-row-content">
+          <input id="addressCity" onInput="onInput" class="input" value="San Francisco" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">The street</view>
+        <view class="form-row-content">
+          <input id="addressStreet" onInput="onInput" class="input" value="Mountain View" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Postal code</view>
+        <view class="form-row-content">
+          <input id="addressPostalCode" onInput="onInput" class="input" value="94016" />
+        </view>
+      </view>
+
+      <view style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text style="font-size:18px;margin-top:18px;margin-bottom:18px">jobs</text>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">company</view>
+        <view class="form-row-content">
+          <input id="organization" onInput="onInput" class="input" value="AntFin" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">position</view>
+        <view class="form-row-content">
+          <input id="title" onInput="onInput" class="input" value="Developer" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Work fax</view>
+        <view class="form-row-content">
+          <input id="workFaxNumber" onInput="onInput" class="input" value="11111111" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">office number</view>
+        <view class="form-row-content">
+          <input id="workPhoneNumber" onInput="onInput" class="input" value="11111112" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">The phone company</view>
+        <view class="form-row-content">
+          <input id="hostNumber" onInput="onInput" class="input" value="11111113" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">E-mail</view>
+        <view class="form-row-content">
+          <input id="email" onInput="onInput" class="input" value="liuhuo01@sina.com" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">website</view>
+        <view class="form-row-content">
+          <input id="url" onInput="onInput" class="input" value="www.alipay.com" />
+        </view>
+      </view>
+
+      <view style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text style="font-size:18px;margin-top:18px;margin-bottom:18px">Working address</text>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">country</view>
+        <view class="form-row-content">
+          <input id="workAddressCountry" onInput="onInput" class="input" value="China" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">province</view>
+        <view class="form-row-content">
+          <input id="workAddressState" onInput="onInput" class="input" value="Zhejiang" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">city</view>
+        <view class="form-row-content">
+          <input id="workAddressCity" onInput="onInput" class="input" value="Hangzhou" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">The street</view>
+        <view class="form-row-content">
+          <input id="workAddressStreet" onInput="onInput" class="input" value="Tianmushan Road" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Postal code</view>
+        <view class="form-row-content">
+          <input id="workAddressPostalCode" onInput="onInput" class="input" value="361005" />
+        </view>
+      </view>
+
+      <view style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text style="font-size:18px;margin-top:18px;margin-bottom:18px">Residential</text>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">fax</view>
+        <view class="form-row-content">
+          <input id="homeFaxNumber" onInput="onInput" class="input" value="11111114" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">phone</view>
+        <view class="form-row-content">
+          <input id="homePhoneNumber" onInput="onInput" class="input" value="11111115" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">country</view>
+        <view class="form-row-content">
+          <input id="homeAddressCountry" onInput="onInput" class="input" value="Canada" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">province</view>
+        <view class="form-row-content">
+          <input id="homeAddressState" onInput="onInput" class="input" value="Ontario" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">city</view>
+        <view class="form-row-content">
+          <input id="homeAddressCity" onInput="onInput" class="input" value="Toronto" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">The street</view>
+        <view class="form-row-content">
+          <input id="homeAddressStreet" onInput="onInput" class="input" value="No.234 Road" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">Postal code</view>
+        <view class="form-row-content">
+          <input id="homeAddressPostalCode" onInput="onInput" class="input" value="123456" />
+        </view>
+      </view>
+
+      <button type="primary" onTap="addPhoneContact">Add to phone contact</button>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,7 @@
+<!-- audio.wxml -->
+<button onTap="audioPlay">Play</button>
+<button onTap="audioPause">pause</button>
+<button onTap="audioStop">stop</button>
+<button onTap="audio14">Seek to 14 seconds</button>
+<button onTap="audioStart">seek beginning</button>
+<button onTap="getAllProps">Get background audio properties</button>

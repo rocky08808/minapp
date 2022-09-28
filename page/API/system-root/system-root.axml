@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-description">Check System root API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.isSystemRoot</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="getSystemRoot">Check System Root</button>
+    </view>
+  </view>
+</view>

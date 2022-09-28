@@ -1,0 +1,9 @@
+.my-picker {
+  background: #EFEFF4;
+}
+.placeholderStyle{
+  border-top: 1px solid #ddd;
+  margin-left: 30rpx;
+  padding: 20rpx 0;
+  overflow: auto;
+}

@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="page-description">Bluetooth API</view>
+  <view class="page-section">
+    <view class="page-section-title">Local Bluetooth switch status</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openBluetoothAdapter">Initialize Bluetooth</button>
+       <button type="primary" onTap="closeBluetoothAdapter">Turn off native Bluetooth</button>
+       <button type="primary" onTap="getBluetoothAdapterState">Get Bluetooth status</button>
+    </view>
+
+    <view class="page-section-title">Scanning bluetooth device</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="startBluetoothDevicesDiscovery">Start searching</button>
+       <button type="primary" onTap="getBluetoothDevices">All searched devices</button>
+       <button type="primary" onTap="getConnectedBluetoothDevices">All connected devices</button>
+       <button type="primary" onTap="stopBluetoothDevicesDiscovery">Stop searching</button>
+    </view>
+
+    <view class="page-section-title">Connecting device</view>
+    <view class="page-section-demo">
+       <input class="input" onInput="bindKeyInput" type="{{text}}" placeholder="Enter the deviceId of the device you want to connect to"></input>
+       <button type="primary" onTap="connectBLEDevice">Connecting device</button>
+       <button type="primary" onTap="getBLEDeviceServices">Access to equipment services</button>
+       <button type="primary" onTap="getBLEDeviceCharacteristics">Get read and write features</button>
+       <button type="primary" onTap="disconnectBLEDevice">Disconnect device</button>
+    </view>
+
+     <view class="page-section-title">Read and write data</view>
+     <view class="page-section-demo">
+       <button type="primary" onTap="notifyBLECharacteristicValueChange">Monitor feature value data changes</button>
+       <button type="primary" onTap="readBLECharacteristicValue">Read data</button>
+       <button type="primary" onTap="writeBLECharacteristicValue">data input</button>
+       <button type="primary" onTap="offBLECharacteristicValueChange">Cancel feature value monitoring</button>
+    </view>
+
+     <view class="page-section-title">Other events</view>
+     <view class="page-section-demo">
+       <button type="primary" onTap="bluetoothAdapterStateChange">Native Bluetooth status change</button>
+       <button type="primary" onTap="offBluetoothAdapterStateChange">Cancel the local Bluetooth status monitor</button>
+       <button type="primary" onTap="BLEConnectionStateChanged">Bluetooth connection status change</button>
+       <button type="primary" onTap="offBLEConnectionStateChanged">Cancel Bluetooth connection status monitoring</button>
+       
+    </view>
+
+  </view>
+</view>

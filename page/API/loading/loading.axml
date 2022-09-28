@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-title">
+      When loading is displayed, the entire h5 page is overwritten. Page elements cannot interact.
+    </view>
+    <view class="page-section-btns">
+      <view onTap="showLoading">Show loading tips</view>
+      <view onTap="showLoading1">Show and hide</view>
+      <view onTap="showLoading2">Hide before show</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page-description">file API</view>
+  <view class="page-section">
+    <view class="page-section-title">Select the file</view>
+    <block a:if="{{tempFilePath != ''}}">
+      <image src="{{tempFilePath}}" class="image"></image>
+    </block>
+    <block a:if="{{tempFilePath === '' && savedFilePath != ''}}">
+      <image src="{{savedFilePath}}" class="image"></image>
+    </block>
+    <block a:if="{{tempFilePath === '' && savedFilePath === ''}}">
+      <view class="image-plus" onTap="chooseImage">
+        <view class="image-plus-horizontal"></view>
+        <view class="image-plus-vertical"></view>
+      </view>
+    </block>
+    <view class="page-section-demo">
+      <button class="page-body-button" type="primary" onTap="saveFile">save file</button>
+      <button class="page-body-button" type="primary" onTap="saveFile_amr">save file(amr)</button>
+      <button class="page-body-button" type="primary" onTap="getFileInfo">Get file information(sha1)</button>
+      <button class="page-body-button" type="primary" onTap="getFileInfo_md5">Get file information(md5)</button>
+      <button class="page-body-button" type="primary" onTap="getSavedFileInfo">Gets saved file information</button>
+      <button class="page-body-button" type="primary" onTap="getSavedFileList">Get a list of saved files</button>
+      <button class="page-body-button" type="primary" onTap="removeSavedFile">Remove saved files</button>
+      <button class="page-body-button" onTap="clear">Delete Files</button>
+    </view>
+  </view>
+</view>

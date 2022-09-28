@@ -1,0 +1,15 @@
+<view class="page">
+  <!--<view class="page-page-description">Purchase</view> -->
+  <view class="page-section">
+  <view class="layout-row">
+    <view class="page-section-title">Product Detail</view>
+    <view class="button-right" onTap="onChangeEnv">Env: {{envList[env]}}</view>    
+    </view>
+    <view a:for="{{products}}" a:for-item="product">
+      <product-item productData="{{product}}" onCountChange="onProductCountChange" />
+    </view>
+  </view>
+  <view>
+    <button size="default" type="primary" onTap="onPlaceOrder" disabled="{{loading}}">Place Order (${{totalPrice}})</button>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view>
+  <view class="btn-container">
+    <button onTap="onTopBtnTap">on</button>
+    <button onTap="onButtomBtnTap">under</button>
+    <button onTap="onRightBtnTap">Right without mask</button>
+    <button onTap="onLeftBtnTap">Left no animation</button>
+  </view>
+  <popup show="{{showLeft}}" animation="{{false}}" position="left" onClose="onPopupClose">
+    <view class="box left">hello world</view>
+  </popup>
+  <popup show="{{showRight}}" position="right" mask="{{false}}" onClose="onPopupClose">
+    <view class="box right" style="display: flex; flex-direction: column;">
+      <view>hello world</view>
+      <view style="margin-top: 20px;">
+        <button onTap="onPopupClose" style="width: 100px;">shut down</button>
+      </view>
+    </view>
+  </popup>
+  <popup show="{{showTop}}" position="top" onClose="onPopupClose">
+    <view class="box top">hello world</view>
+  </popup>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose">
+    <view class="box bottom">hello world</view>
+  </popup>
+</view>

@@ -1,0 +1,63 @@
+<view class="page">
+  <view class="page-description">Swiper</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <swiper 
+        style="height:150px"
+        class="demo-swiper"
+        previousMargin="10px"
+        nextMargin="10px"
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        circular="{{circular}}"
+        current="{{current}}"
+        disable-programmatic-animation="{{true}}"
+      >
+        <block a:for="{{background}}">
+          <swiper-item key="swiper-item-{{index}}">
+            <view class="swiper-item bc_{{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <swiper 
+        style="height:150px"
+        class="demo-swiper"
+        previousMargin="10px"
+        nextMargin="10px"
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        circular="{{circular}}"
+        disable-touch="{{true}}"
+        duration="2000"
+        acceleration="{{true}}"
+        indicator-color="rgba(0,255,255,.3)"
+        indicator-active-color="rgba(255,215,0,.3)"
+        active-class="activeStyle"
+        changing-class="changingStyle"
+      >
+        <block a:for="{{background}}">
+          <swiper-item key="swiper-item-{{index}}">
+            <view class="swiper-item bc_{{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="margin-t">
+        <slider onChange="intervalChange" value="{{interval}}" show-value min="500" max="2000"/>
+        <view>interval</view>
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="changeIndicatorDots">indicator-dots</view>
+      <view onTap="changeAutoplay">autoplay</view>
+      <view onTap="changeVertical">vertical</view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="changeCircular">circular</view>
+      <view onTap="setCurrent">disable-animation</view>
+    </view>
+  </view>
+</view>

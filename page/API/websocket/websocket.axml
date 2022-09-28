@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="subView">
+  <input class="server_addr" placeholder="wss://YourServer/" onConfirm="onServerAddressComplete" onBlur="onServerAddressComplete" value="wss://imobilegmp.alipay.com/group/connect/"/>
+  </view>
+  <view class="subView">
+    <button class="buttons" name="startButton" onTap="connect_start">Begin to connect</button>
+  </view>
+  <view class="subView" a:if="{{sendMessageAbility}}">
+    <input class="message_text" placeholder="Enter the message to send：" onConfirm="onSendMessageReady" onBlur="onSendMessageReady"/>
+  </view>
+  <view class="subView" a:if="{{sendMessageAbility}}">
+    <button class="buttons" name="sendButton" onTap="send_start">send data</button>
+  </view>
+  <view class="subView" a:if="{{closeLinkAbility}}">
+    <button class="buttons" name="closeButton" onTap="close_start">shut down</button>
+  </view>
+  <view>
+    <text class="run_log">{{log}}</text>
+  </view>
+</view>
