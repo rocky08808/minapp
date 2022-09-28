@@ -1,0 +1,10 @@
+variables:
+  MARMOT_SERVER_URL: "http://marmot-in.alipay.net"
+  PACKAGE_TYPE: "MINI_PROGRAM"
+test:
+  image: reg.docker.alibaba-inc.com/macaca/macaca-electron:2.1.2
+  script:
+    - tnpm i -g marmot-cli@latest-2
+    - marmot upload
+  tags:
+    - swarm
